@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Stats from "@/components/Stats";
 import Features from "@/components/Features";
 import DiscordCTA from "@/components/DiscordCTA";
 import FAQ from "@/components/FAQ";
@@ -14,6 +15,8 @@ export default function Home() {
       <Hero />
 
       <About />
+
+      <Stats />
 
       <Features />
 
