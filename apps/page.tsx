@@ -8,13 +8,19 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden">
+    <main className="relative min-h-screen overflow-x-hidden bg-[#050816] text-white">
       <Navbar />
+
       <Hero />
+
       <About />
+
       <Features />
+
       <DiscordCTA />
+
       <FAQ />
+
       <Footer />
     </main>
   );
