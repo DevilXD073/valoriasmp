@@ -124,3 +124,49 @@ padding:70px 0;
 }
 
 }
+.particle{
+
+position:absolute;
+
+bottom:-20px;
+
+width:4px;
+height:4px;
+
+border-radius:50%;
+
+background:#60a5fa;
+
+opacity:.6;
+
+animation:floatUp linear infinite;
+
+box-shadow:0 0 12px #3b82f6;
+
+}
+
+@keyframes floatUp{
+
+0%{
+
+transform:translateY(0);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh);
+
+opacity:0;
+
+}
+
+}
