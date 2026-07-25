@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import {
   Heart,
   MessageCircle,
@@ -14,7 +13,6 @@ export default function Footer() {
 
   return (
     <footer className="relative mt-24 border-t border-white/10 bg-black/30 backdrop-blur-xl">
-
       {/* Top Glow */}
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
 
@@ -24,13 +22,13 @@ export default function Footer() {
 
           {/* Brand */}
           <div>
-            <h2 className="text-3xl font-black gradientText">
+            <h2 className="gradientText text-3xl font-black">
               ValoriaSMP
             </h2>
 
             <p className="mt-5 leading-7 text-gray-400">
               The ultimate StrengthSMP experience.
-              Build your empire, fight powerful enemies,
+              Build your empire, dominate PvP,
               and become the strongest player in
               Season III.
             </p>
@@ -44,39 +42,33 @@ export default function Footer() {
 
             <div className="space-y-3">
 
-              <Link
-                href="/"
+              <a
+                href="#about"
                 className="block text-gray-400 transition hover:text-cyan-400"
               >
-                Home
-              </Link>
+                About
+              </a>
 
-              <Link
-                href="/rules"
+              <a
+                href="#features"
                 className="block text-gray-400 transition hover:text-cyan-400"
               >
-                Rules
-              </Link>
+                Features
+              </a>
 
-              <Link
-                href="/staff"
+              <a
+                href="#faq"
                 className="block text-gray-400 transition hover:text-cyan-400"
               >
-                Staff
-              </Link>
-
-              <Link
-                href="/changelog"
-                className="block text-gray-400 transition hover:text-cyan-400"
-              >
-                Changelog
-              </Link>
+                FAQ
+              </a>
 
             </div>
           </div>
 
-          {/* Features */}
+          {/* Server */}
           <div>
+
             <h3 className="mb-5 text-xl font-bold">
               Server
             </h3>
@@ -90,7 +82,7 @@ export default function Footer() {
 
               <div className="flex items-center gap-3 text-gray-400">
                 <Shield className="h-5 w-5 text-cyan-400" />
-                Balanced PvP
+                Balanced Gameplay
               </div>
 
               <div className="flex items-center gap-3 text-gray-400">
@@ -99,28 +91,31 @@ export default function Footer() {
               </div>
 
             </div>
+
           </div>
 
           {/* Discord */}
           <div>
 
             <h3 className="mb-5 text-xl font-bold">
-              Community
+              Join Our Community
             </h3>
 
             <p className="leading-7 text-gray-400">
-              Join our Discord server to receive
-              the official server IP,
-              updates,
+              The official server IP is available
+              exclusively inside our Discord server.
+
+              Join today to receive updates,
+              announcements,
               giveaways,
-              and event announcements.
+              and event notifications.
             </p>
 
             <a
               href="https://discord.gg/PcC4bC69WG"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-flex rounded-xl bg-gradient-to-r from-blue-600 via-cyan-500 to-purple-600 px-6 py-3 font-bold text-white transition hover:scale-105"
+              className="mt-6 inline-flex rounded-xl bg-gradient-to-r from-blue-600 via-cyan-500 to-purple-600 px-6 py-3 font-bold text-white transition duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/40"
             >
               Join Discord
             </a>
@@ -137,9 +132,7 @@ export default function Footer() {
 
             © {year} ValoriaSMP • Made with
 
-            <Heart
-              className="h-4 w-4 fill-red-500 text-red-500"
-            />
+            <Heart className="h-4 w-4 fill-red-500 text-red-500" />
 
             for the community.
 
@@ -153,6 +146,7 @@ export default function Footer() {
               })
             }
             className="rounded-full border border-cyan-500/30 bg-white/5 p-3 transition hover:scale-110 hover:border-cyan-400"
+            aria-label="Back to top"
           >
             <ChevronUp className="h-5 w-5 text-cyan-400" />
           </button>
@@ -160,6 +154,7 @@ export default function Footer() {
         </div>
 
       </div>
+
     </footer>
   );
 }
